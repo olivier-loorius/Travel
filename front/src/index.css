@@ -1,0 +1,55 @@
+/* Index CSS (index.css) */
+
+/* Appliquer des styles de base */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Classe générale pour la carte */
+.travel-card {
+    @apply bg-white rounded-lg shadow-md overflow-hidden transition-transform duration-300 ease-in-out;
+    height: auto; /* Permet d'ajuster la hauteur automatiquement */
+  }
+  
+  /* Image de la carte */
+  .travel-card img {
+    @apply w-full h-48 object-cover;
+  }
+  
+  /* Contenu de la carte */
+  .travel-card .content {
+    @apply p-4 text-center;
+    height: auto; /* Hauteur automatique */
+  }
+  
+  /* Titre de la carte */
+  .travel-card h3 {
+    @apply text-lg font-bold text-gray-800 mb-2;
+  }
+  
+  /* Description du voyage */
+  .travel-card p {
+    @apply text-sm text-gray-600 mb-4;
+    height: 60px; /* Limite la hauteur du texte pour garder un aspect uniforme */
+    overflow: hidden; /* Masque le texte excédentaire */
+    text-overflow: ellipsis; /* Affiche des "..." si le texte est trop long */
+  }
+  
+  /* Style pour le bouton */
+  .travel-card .button {
+    @apply bg-yellow-400 text-gray-800 py-2 px-4 rounded-full text-xs font-bold uppercase transition-colors duration-300 ease-in-out;
+    width: 200px; /* Largeur du bouton */
+    height: 45px; /* Hauteur du bouton */
+    font-size: 0.875rem; /* Taille du texte dans le bouton */
+  }
+  
+  /* Hover effect sur le bouton */
+  .travel-card .button:hover {
+    @apply bg-green-400;
+  }
+  
+  /* Conteneur de boutons */
+  .travel-card .button-container {
+    @apply mt-4 mb-4 flex justify-center gap-4;
+  }
+  
